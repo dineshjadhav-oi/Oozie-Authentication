@@ -15,7 +15,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @EnableAutoConfiguration
-@SpringBootApplication
+@SpringBootApplication 
 @ComponentScan(value = "com.oozie")
 public class Application {
     private static final Logger LOGGER = Logger.getLogger(Application.class);
