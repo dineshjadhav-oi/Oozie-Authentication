@@ -16,7 +16,7 @@ public class GetDataService {
 	try{
 	    HttpSpnegoConnection httpSpnegoConnection=new HttpSpnegoConnection();
 	    httpSpnegoConnection.getConnection();
-	AuthOozieClient wc=new AuthOozieClient("http://10.0.0.42:12000/oozie","KERBEROS");//use your own oozie url
+	AuthOozieClient wc=new AuthOozieClient("http://olympus.open-insights.co.in:12000/oozie","KERBEROS");//use your own oozie url
 	 coordinatorJob = wc.getCoordJobInfo("0000002-180316055126995-oozie-oozi-C");
 	}catch (OozieClientException e) {
 	    e.printStackTrace();
